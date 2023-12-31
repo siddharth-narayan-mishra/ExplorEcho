@@ -548,12 +548,6 @@
     }
 }
 
-@media (max-width:1500px) and (min-width=700px){
-    *{
-        visibility: hidden;
-    }
-}
-
 @media (max-width:900px){    
     .menu-btn{
         visibility: visible;
