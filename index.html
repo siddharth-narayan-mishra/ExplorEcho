@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExplorEcho - Echoes of Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <!-- hero-section   -->
+        <div class="hero-section">
+            <div class="linear-gradient">
+                <div class="title-container">
+                    <div class="navbar">                                     
+                        <div class="title" id="title">
+                            <i class="fa-solid fa-person-hiking icon"></i>ExplorEcho
+                        </div>
+                    <div class="navitems"> 
+                        <ul class="sidebar">
+                            <li class="navitem" onclick=hideSidebar()><i class="fa-solid fa-x"></i></li>
+                            <li class="navitem">HOME</li>
+                            <li class="navitem">JOURNAL</li>
+                            <li class="navitem">GALLERY</li>
+                            <li class="navitem">EXPLORE</li>
+                            <li class="navitem" id="time1">12:00:00</li>
+                            <li class="navitem" id="dark-mode1"><i class="fa-solid fa-sun"></i></li>
+                        </ul>
+                        <ul>
+                            <li class="navitem menu-btn" onclick=showSidebar()><i class="fa-solid fa-bars"></i></li>
+                            <li class="navitem hideOnMobile">HOME</li>
+                            <li class="navitem hideOnMobile">JOURNAL</li>
+                            <li class="navitem hideOnMobile">GALLERY</li>
+                            <li class="navitem hideOnMobile">EXPLORE</li>                           
+                            <li class="navitem" id="time">12:00:00</li>
+                            <li class="navitem hideOnMobile" id="dark-mode"><i class="fa-solid fa-sun"></i></li>               
+                        </ul>
+                    </div>
+                    </div>
+                    <div class="tagline">
+                        <h3>Echoes of Adventure</h3>
+                        <p class="intro">Dive into a world of captivating images that transport you to the most mesmerizing tourist destinations around the globe.</p>
+                    </div>
+                </div>
+                </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Gallery -->
+        <div class="page" id="gallery-page">
+            <div class="page-heading"><h1>The Gallery</h1><div class="underline"></div></div>
+
+            <div class="full-img" id="imgBox">
+                <img src="" alt="" id="fullImg">
+                <span id="close-btn"><i class="fa-solid fa-xmark"></i></span>
+            </div>
+
+            <div class="gallery">
+                <div class="image" id="one" onclick="gofull()"></div>
+                <div class="image" id="two" onclick="gofull()"></div>
+                <div class="image" id="three" onclick="gofull()"></div>
+                <div class="image" id="four" onclick="gofull()"></div>
+                <div class="image" id="five" onclick="gofull()"></div>
+                <div class="image" id="six" onclick="gofull()"></div>
+                <div class="image" id="seven" onclick="gofull()"></div>
+            </div>
+        </div>
+        <!-- journal   -->
+        <div class="page">
+            <div class="page-heading"><h1>The Journal</h1><div class="underline"></div></div>
+            <div class="article-container">
+                <div class="article">
+                    <img src="https://images.unsplash.com/photo-1636257763258-a78982bd7ead?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8QW5nZWwlMjBGYWxscyUyQyUyMFZlbmV6dWVsYXxlbnwwfHw0fHx8MA%3D%3D" alt="Couldn't load image" class="article-image" id="angel-falls">
+                    <div class="date">20 DECEMBER 2023</div>
+                    <div class="headline">Angel Falls, Venezuela</div>
+                    <div class="hor-div"></div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quo doloribus natus sapiente soluta debitis sequi unde illum consequatur iure facilis ipsa minima itaque, dolore, quam placeat, numquam quod aut.</div>
+                    <div class="rm">READ MORE &rarr;</div>
+                </div>
+                <div class="article offset">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962606244-567dd302286e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8U2VyZW5nZXRpJTIwTmF0aW9uYWwlMjBQYXJrJTJDJTIwVGFuemFuaWF8ZW58MHx8NHx8fDA%3D" alt="Couldn't load image" class="article-image" id="serengeti">
+                    <div class="date">20 OCTOBER 2023</div>
+                    <div class="headline">Serengeti National Park, Tanzania</div>
+                    <div class="hor-div"></div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quo doloribus natus sapiente soluta debitis sequi unde illum consequatur iure facilis ipsa minima itaque, dolore, quam placeat, numquam quod aut.</div>
+                    <div class="rm">READ MORE &rarr;</div>
+                </div>
+                <div class="article">
+                    <img src="https://plus.unsplash.com/premium_photo-1661862758718-d68e9ee13357?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Couldn't load image" class="article-image" id="gbr">
+                    <div class="date">9 JULY 2023</div>
+                    <div class="headline">Great Barrier Reef, Australia</div>
+                    <div class="hor-div"></div>
+                    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum quo doloribus natus sapiente soluta debitis sequi unde illum consequatur iure facilis ipsa minima itaque, dolore, quam placeat, numquam quod aut.</div>
+                    <div class="rm">READ MORE &rarr;</div>
+                </div>
+            </div>
+        </div>
+        <!-- explore the world   -->
+        <div class="page" id="explore" style="height: 108dvh; padding-bottom: 50px;">
+            <div class="page-heading"><h1>Explore The World</h1><div class="underline" id="explore-underline"></div></div>
+
+            <div class="exp">We seek to provide the most authentic content from athletes, adventurers, explorers and travellers around the world.</div>
+
+            <div class="card-container" id="card-container">
+                <div class="card" id="antelope-canyon">
+                    <div class="place">Antelope Canyon</div>
+                    <div class="country">USA</div>
+                </div>
+                <div class="card" id="palawan">
+                    <div class="place">Palawan</div>
+                    <div class="country">Phillipines</div>
+                </div>
+                <div class="card" id="lake-ohrid">
+                    <div class="place">Lake Ohrid</div>
+                    <div class="country">Albania</div>
+                </div>
+                <div class="card" id="finland">
+                    <div class="place">Kakslauttanen</div>
+                    <div class="country">Finland</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <span class="title" id="footer-title">
+                <i class="fa-solid fa-person-hiking icon" id="footer-icon"></i>ExplorEcho
+            </span>
+
+            <div class="foot-list">
+                <div class="list">
+                    <div class="foot-list-title">DOWNLOAD</div>
+                    <ul>
+                        <li>Windows</li>
+                        <li>MacOS</li>
+                        <li>Android</li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <div class="foot-list-title">PRODUCTS</div>
+                    <ul>
+                        <li>Web</li>
+                        <li>App</li>
+                        <li>Software</li>
+                    </ul>
+                </div>       
+
+                <div class="list">
+                    <div class="foot-list-title">SERVICES</div>
+                    <ul>
+                        <li>Design</li>
+                        <li>Development</li>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <div class="foot-list-title">COMPANY</div>
+                    <ul>
+                        <li>Terms & Services</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="list">
+                    Subscribe to our newsletter!
+                    <input type="text" id="email" placeholder="Enter your e-mail address.">
+                    <label for="email"><button id="submit">Submit</button></label>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="copyright">&copy;2024 ExplorEcho Adventures Pvt. Ltd. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
