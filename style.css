@@ -153,12 +153,12 @@
 .page-heading>h1:hover{
     scale: 1.2;
     margin-bottom: 5px;
-    transition: ease-out 1s 0.2s;
+    transition: ease-out .3s 0s;
 }
 
 .page-heading>h1:hover+.underline{
     width: 200px;
-    transition: ease-out 1s 0.2s;
+    transition: ease-out .3s 0s;
 }
 
 .article-container{
@@ -176,12 +176,12 @@
 
 .article:hover>.headline{
     font-weight: 600;
-    transition: ease-in-out 1s 0.2s;
+    transition: ease-in-out .3s 0s;
 }
 
 .article:hover>.article-image{
     scale: 1.1;
-    transition: ease-in-out 1s 0.2s;
+    transition: ease-in-out .3s 0s;
 }
 
 .article>img{
@@ -217,7 +217,7 @@
 
 .rm:hover{
     text-decoration: underline #EDCB96;
-    transition: ease-in-out 0.3s 0.2s;
+    transition: ease-in-out .3s 0s;
 }
 
 .hor-div{
@@ -241,14 +241,14 @@
 
 .card:hover{
     scale: 1.1;
-    transition: ease-out 0.3s 0.2s;
+    transition: ease-out 0.3s 0s;
     text-decoration: underline 2px solid white;
 }
 
 .card-container:has(.card:hover)>.card:not(:hover){
     scale: 0.9;
     opacity: 0.5;
-    transition: ease-in 0.8s 0.2s;
+    transition: ease-in .3s 0s;
 }
 
 .exp{
@@ -352,7 +352,7 @@
     color: white;
     background-color: #554dd1;
     
-    box-shadow: 5px 6px 0px 0px #2F195F;
+    box-shadow: 4px 4px 0px 0px #2F195F;
 }
 
 .gallery{
@@ -373,13 +373,13 @@
 
 .image:hover{
     scale: 1.1;
-    transition: ease-in-out .8s 0.2s;
+    transition: ease-in-out .3s 0s;
 }
 
 .gallery:has(.image:hover)>.image:not(:hover){
     scale: 0.9;
     opacity: 0.5;
-    transition: ease-in-out .8s 0.2s;
+    transition: ease-in-out .3s 0s;
 }
 
 .full-img{
